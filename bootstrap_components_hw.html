@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>BS_layout_HW</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="styles.css">    
+    </head>
+
+    <body class='d-flex flex-column min-vh-100 bg-dark'>
+        <header>
+            <nav class='navbar navbar-expand-lg navbar-light bg-light p-3'>
+                <div class="container">
+                    <a class="navbar-brand" href="#">Tech Solutions</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbar-Menu"
+                        aria-controls="navbar-Menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-Menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">SERVICES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+                    </ul>
+                </div>                
+            </nav>
+        </header>
+        <main class="flex-grow-1">
+            <div id="carouselExampleControls" class="carousel slide mt-5 mb-5" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">                        
+                        <img src="image copy 2.png" class="d-block w-100 img-fluid" alt="laptop">                     
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image copy.png" class="d-block w-100 img-fluid" alt="hardware">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image.png" class="card-img-bottom" alt="Console">
+                    </div>
+                </div>
+                <button class="carousel-control-prev-icon" type="button" data-bs-target="#carouselExampleControls" data-be-slide="carousel-control-prev-icon">
+                    <span class="carousel-contole-prev-icon">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carouse-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div class="container mt-5 mb-5">
+                <div class="row">
+                    <div class="col-md-4 d-flex align-items rounded-5 g-5">
+                        <div class="card">
+                            <img src="image copy 2.png" class="card-img-bottom" alt="Laptop">
+                            <div class="card-body">
+                                <h4 class="card-title">Laptop Repairs</h4>
+                                <p class="card-text">Before you throw it away let us fix your laptop!</p>
+                                <button type="button" class="btn btn-outline-primary">Click for more</button>                                
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-5 mb-5">
+                <div class="row">
+                    <div class="col-md-4 d-flex align-items rounded-5 g-5">
+                        <div class="card">
+                            <img src="image copy.png" class="card-img-bottom" alt="Hardware">
+                            <div class="card-body">
+                                <h4 class="card-title">Hardware Repairs</h4>
+                                <p class="card-text">We'll dive deep into your hardware and troubleshoot any problems</p>
+                                <button type="button" class="btn btn-outline-primary">Click for more</button>                                
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-5 mb-5">
+                <div class="row">
+                    <div class="col-md-4 d-flex align-items rounded-5 g-5">
+                        <div class="card">
+                            <img src="image.png" class="card-img-bottom" alt="Console">
+                            <div class="card-body">
+                                <h4 class="card-title">Console Repairs</h4>
+                                <p class="card-text">I guarantee it's not as bad as you think!</p>
+                                <button type="button" class="btn btn-outline-primary">Click for more</button>                                
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mt-5">
+                        <h2 class="text-light">About Us</h2>
+                        <p>Started in my Grandma basement. Trying to fix on an old tv. 
+                           It sparked the Journey we're on now. I have a deep passion for fixing 
+                           tech devices and I love to share what I've accomplished with others</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mt-5">
+                        <h2 class="text-light">Our Mission</h2>
+                        <p>To bring all your products back to life before you decide to buy something new. 
+                            If you do decide to get something new we'll recommend some products and still 
+                            fix yours and donate it to someone in need!</p>
+                    </div>
+                </div>
+            </div>
+
+            <aside id="contact-us" class="container my-4 bg-light p-3 rounded-5">
+                <h2>Contact Us</h2>
+                <form action="/submin" method="post" class="p-3 rounded was-validated" novalidate>
+                    <fieldset>
+                        <legend class="h5">Contact Info</legend>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="full-name" name="full-name"
+                            placeholder="Enter your full name" Required />
+                            <label for="full-name">Full Name</label>
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">Please enter your full name</div>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" Required>
+                            <label for="email">Email</label>
+                            <div class="valid-feedback">We're in motion</div>
+                            <div class="invalid-feedback">Come on man that is not your email</div>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                            <label for="phone">Phone</label>
+                            <div class="valid-feedback">Ok cool</div>
+                            <div class="invalid-feedback">Lets try that again pal</div>
+                        </div>
+                    </fieldset>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" name="message" id="message" row="6" placeholder="Your message here!" Required></textarea>
+                        <label for="message">Message</label>
+                        <div class="valid-feedback">Alright now!</div>
+                        <div class="invalid-feedback">Lets try that again</div>
+                    </div>
+                    <button type="submit" class="btn btn-outline-dark col-2">Submit</button>
+                </form>
+            </aside>
+
+        </main>
+        <footer>
+            <div class="mt-auto p-3 text-center">
+                <p>@ 2024 Tech Solutions</p>
+
+            </div>
+        </footer>
+        
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
